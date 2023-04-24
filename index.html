@@ -1,32 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
-    <!-- Начало: Данный блок удалять нельзя -->
-    <div class="maketforfigma">
-        <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
-        </a>
-        <div>
-            <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
-            </p>
-            <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
-            </p>
-        </div>
-    </div>
-    <!-- Конец -->
+	<!-- Начало: Данный блок удалять нельзя -->
+	<div class="maketforfigma">
+		<a href="https://t.me/s/FigmaToHTML" target="_blank">
+			<img src="img/logo.png">
+		</a>
+		<div>
+			<p>
+				Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+					href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+			</p>
+			<p>
+				При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь
+				получил оплату за верстку этого макета.
+			</p>
+		</div>
+	</div>
+	<!-- Конец -->
 
-    <div class="main">
-        В данном блоке размещается верстка
-    </div>
+	<div class="main">
+		<div class="wrapper">
+			<header data-scroll="120" data-scroll-show class="header">
+				<div class="header__wrapper">
+					<div class="header__container">
+						<div class="header__body body-header">
+							<a href="#" class="body-header__logo">
+								<img src="img/icons/main-logo.svg" alt="logo">
+								<span class="visually-hidden">На главную</span>
+							</a>
+							<div class="body-header__menu menu">
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu__item"><a href="#" class="menu__link _active">Home </a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Property </a></li>
+										<li class="menu__item"><a href="#" class="menu__link">About </a></li>
+										<li class="menu__item"><a href="#" class="menu__link"> Service</a></li>
+										<li class="menu__item"><a href="#" class="menu__link"> Contact</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div data-da=".menu__body, 768" class="body-header__action">
+								<a href="#" class="body-header__sign btn">Sign in</a>
+								<a href="#" class="body-header__login btn">Login</a>
+							</div>
+							<button type="button" class="icon-menu"><span></span></button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="page__main main-page main-page ">
+					<div class="main-page__container">
+						<div class="main-page__body body-main">
+							<div class="body-main__content">
+								<div class="body-main__subtitle subtitle">REAL ESTATE</div>
+								<h1 class="body-main__title title">Let's hunt for your dream residence</h1>
+								<p class="body-main__text">
+									Explore our range of beautiful properties with the addition of separate accommodation suitable for
+									you.
+								</p>
+							</div>
+							<div class="body-main__filter filter-main">
+								<div class="filter-main__body">
+									<div data-tabs class="filter-main__tabs tabs-filter">
+										<nav data-tabs-titles class="tabs-filter__navigation">
+											<button type="button" class="tabs-filter__title _tab-active">Buy</button>
+											<button type="button" class="tabs-filter__title">Rent</button>
+										</nav>
+										<div data-tabs-body class="tabs-filter__content">
+											<div class="tabs-filter__body">
+												<form action="#" class="tabs-filter__form form-filter">
+													<div class="form-filter__body">
+														<div class="form-filter__item">
+															<div class="form-filter__title">Location</div>
+															<select name="form[]" class="form-filter__select">
+																<option value="1" selected> Bogor, Jawa Barat</option>
 
+																<option value="2"> Lorem ipsum dolor sit.</option>
+																<option value="3"> Bogor, Jawa</option>
+															</select>
+														</div>
+														<div class="form-filter__item">
+															<div class="form-filter__title">Type</div>
+															<select name="form[]" class="form-filter__select">
+																<option value="1" selected> Home</option>
+																<option value="2">Lorem ipsum dolor sit.</option>
+																<option value="3">Lorem, ipsum.</option>
+															</select>
+														</div>
+														<div class="form-filter__item">
+															<div class="form-filter__title">Price Range</div>
+															<select name="form[]" class="form-filter__select">
+																<option value="1" selected>$200-$350 </option>
+																<option value="2"> $350-$450</option>
+																<option value="3">$450-$550 </option>
+															</select>
+														</div>
+														<button type="submit" class="form-filter__btn btn">Search</button>
+													</div>
+												</form>
+											</div>
+											<div class="tabs-filter__body">
+												Содержимое второго таба
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-page__bg main-page__bg-ibg">
+						<picture>
+							<source srcset="img/content/main-block/item1.webp" type="image/webp"><img
+								src="img/content/main-block/item1.png" alt="home">
+						</picture>
+					</div>
+				</section>
+				<!--  -->
+				<section class="page__discover discover-page">
+					<div class="discover-page__container">
+						<div class="discover-page__body body-discover">
+							<div class="body-discover__content">
+								<div class="body-discover__column">
+									<div class="body-discover__subtitle subtitle"> DISCOVER</div>
+									<h2 class="body-discover__title title">Best recomendation</h2>
+									<p class="body-discover__text">Discover our exclusive selection of the finest one-of-a-kind luxury
+										properties architectural masterpieces.</p>
+								</div>
+								<div class="body-discover__column">
+									<a href="#" class="body-discover__more learn-more _icon-arrow-right">Learn More</a>
+								</div>
+							</div>
+							<div class="body-discover__items">
+								<article class="body-discover__item item-discover">
+									<div class="item-discover__body">
+										<div class="item-discover__img item-discover__img-ibg">
+											<picture>
+												<source srcset="img/content/discover-block/item1.webp" type="image/webp"><img
+													src="img/content/discover-block/item1.jpg" alt="">
+											</picture>
+										</div>
+										<div class="item-discover__content">
+											<h3 class="item-discover__title">Perum griya asri</h3>
+											<div class="item-discover__location">Bogor, Jawa Barat</div>
+											<div class="item-discover__info">
+												<div class="item-discover__price">$25,000</div>
+												<div class="item-discover__area">360m<sup>2</sup> <span> Living Area</span></div>
+											</div>
+											<a href="#" class="item-discover__link">Send Inquiry</a>
+										</div>
+									</div>
+								</article>
+								<article class="body-discover__item item-discover">
+									<div class="item-discover__body">
+										<div class="item-discover__img item-discover__img-ibg">
+											<picture>
+												<source srcset="img/content/discover-block/item2.webp" type="image/webp"><img
+													src="img/content/discover-block/item2.jpg" alt="">
+											</picture>
+										</div>
+										<div class="item-discover__content">
+											<h3 class="item-discover__title">Perum griya asri</h3>
+											<div class="item-discover__location">Bogor, Jawa Barat</div>
+											<div class="item-discover__info">
+												<div class="item-discover__price">$25,000</div>
+												<div class="item-discover__area">360m<sup>2</sup> <span> Living Area</span></div>
+											</div>
+											<a href="#" class="item-discover__link">Send Inquiry</a>
+										</div>
+									</div>
+								</article>
+								<article class="body-discover__item item-discover">
+									<div class="item-discover__body">
+										<div class="item-discover__img item-discover__img-ibg">
+											<picture>
+												<source srcset="img/content/discover-block/item3.webp" type="image/webp"><img
+													src="img/content/discover-block/item3.jpg" alt="">
+											</picture>
+										</div>
+										<div class="item-discover__content">
+											<h3 class="item-discover__title">Perum griya asri</h3>
+											<div class="item-discover__location">Bogor, Jawa Barat</div>
+											<div class="item-discover__info">
+												<div class="item-discover__price">$25,000</div>
+												<div class="item-discover__area">360m<sup>2</sup> <span> Living Area</span></div>
+											</div>
+											<a href="#" class="item-discover__link">Send Inquiry</a>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--  -->
+				<section class="page__advante advante-page">
+					<div class="advante-page__container">
+						<div class="advante-page__body body-advante">
+							<div class="body-advante__subtitle subtitle">OUR ADVANTE</div>
+							<h2 class="body-advante__title title">Giving you peace of mind</h2>
+							<div class="body-advante__items">
+								<article class="body-advante__item item-advante">
+									<span class="item-advante__icon _icon-heart"></span>
+									<h3 class="item-advante__title">Comfortable</h3>
+									<p class="item-advante__text">Enjoy lifestyle amenities designed to provide every homeowners modern
+										comfort, a stone's throw away from schools, churches, and hospitals.</p>
+								</article>
+								<article class="body-advante__item item-advante">
+									<span class="item-advante__icon _icon-shield"></span>
+									<h3 class="item-advante__title">Extra security</h3>
+									<p class="item-advante__text">You can connect with potential tenants without having to share your
+										phone number. We also require all users to register to validate their legitimacy.</p>
+								</article>
+								<article class="body-advante__item item-advante">
+									<span class="item-advante__icon _icon-star-rt"></span>
+									<h3 class="item-advante__title">Luxury</h3>
+									<p class="item-advante__text">Find out how we provide the highest standard of professional property
+										management to give you all the benefits of property.</p>
+								</article>
+								<article class="body-advante__item item-advante">
+									<span class="item-advante__icon _icon-ticket"></span>
+									<h3 class="item-advante__title">Best price</h3>
+									<p class="item-advante__text">Not sure what you should be charging for your property? Let us do the
+										numbers for you—contact us today for a free rental appraisal on your home.</p>
+								</article>
+								<article class="body-advante__item item-advante">
+									<span class="item-advante__icon _icon-location"></span>
+									<h3 class="item-advante__title">Strategic location</h3>
+									<p class="item-advante__text">located in the city center close to the shopping center. Very good for
+										areas surrounded by international education centers, start-up office centers.</p>
+								</article>
+								<article class="body-advante__item item-advante">
+									<span class="item-advante__icon _icon-graph"></span>
+									<h3 class="item-advante__title">Efficient</h3>
+									<p class="item-advante__text">Schedule visits to multiple properties at once in one day without
+										having to call them one by one. Check everything and find the best properties for rent</p>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--  -->
+				<section class="page__about about-page">
+					<div class="about-page__container">
+						<div class="about-page__body body-about">
+							<div class="body-about__bg bg-about bg-about-ibg">
+								<picture>
+									<source srcset="img/content/about-block/item1.webp" type="image/webp"><img
+										src="img/content/about-block/item1.jpg" alt="img">
+								</picture>
+								<div class="bg-about__rating rating-about _icon-tick">
+									<div class="rating-about__body">
+										<div class="rating-about__num">4.8</div>
+										<div class="rating-about__star">
+											<span class="_icon-star-rt"></span>
+											<span class="_icon-star-rt"></span>
+											<span class="_icon-star-rt"></span>
+											<span class="_icon-star-rt"></span>
+											<span class="_icon-star-rt"></span>
+										</div>
+										<div class="rating-about__trusted">Trusted on</div>
+										<div class="rating-about__reviews">500+ Reviews</div>
+									</div>
+								</div>
+								<div class="bg-about__stat stat-about">
+									<div class="stat-about__sale">
+										<div class="stat-about__num">250+</div>
+										<div class="stat-about__text">Property
+											Sale</div>
+									</div>
+									<div class="stat-about__rent">
+										<div class="stat-about__num">550+</div>
+										<div class="stat-about__text">Apartmen
+											Rent</div>
+									</div>
+								</div>
+							</div>
+							<div class="body-about__content content-about">
+								<div class="content-about__subtitle subtitle">ABOUT US</div>
+								<h2 class="content-about__title title">How much is your property worth now?</h2>
+								<p class="content-about__text">We have built our reputation as true local area experts. We have gained
+									more knowledge about buyer interests, our neighborhood and the market than any other brand because we
+									live locally and work for local people.</p>
+								<a href="#" class="content-about__btn btn">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__customer customer-page">
+					<div class="customer-page__container">
+						<div class="customer-page__body body-customer">
+							<div class="body-customer__content">
+								<div class="body-customer__column">
+									<div class="body-customer__subtitle subtitle">CUSTOMER TESTIMONIAL</div>
+									<h2 class="body-customer__title title">Peopel say about us?</h2>
+								</div>
+								<div class="body-customer__column">
+									<a href="#" class="body-customer__more learn-more _icon-arrow-right">Learn More</a>
+								</div>
+							</div>
+
+							<div class="body-customer__items">
+								<article class="body-customer__item item-customer">
+									<div class="item-customer__icon _icon-apostrophe"></div>
+									<h3 class="item-customer__title">It proved to be exactly the kind of home we wanted.</h3>
+									<p class="item-customer__text">We wish to express our thanks for your hard work in finding us a
+										temporary home, which proved to be exactly what we wanted.</p>
+									<div class="item-customer__user user-customer">
+										<div class="user-customer__img user-customer__img-ibg">
+											<picture>
+												<source srcset="img/content/customer-block/avatar1.webp" type="image/webp"><img
+													src="img/content/customer-block/avatar1.jpg" alt="avatar">
+											</picture>
+										</div>
+										<div class="user-customer__block">
+											<div class="user-customer__name">Jaydon Aminoff</div>
+											<div class="user-customer__post">UX Designer</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-customer__item item-customer">
+									<div class="item-customer__icon _icon-apostrophe"></div>
+									<h3 class="item-customer__title">Nobody knows Portland and the peninsula better than David.</h3>
+									<p class="item-customer__text">My wife and I had a dream of downsizing from our house in Cape
+										Elizabeth into a small condo closer to where we work and play in Portland. </p>
+									<div class="item-customer__user user-customer">
+										<div class="user-customer__img user-customer__img-ibg">
+											<picture>
+												<source srcset="img/content/customer-block/avatar2.webp" type="image/webp"><img
+													src="img/content/customer-block/avatar2.jpg" alt="avatar">
+											</picture>
+										</div>
+										<div class="user-customer__block">
+											<div class="user-customer__name">Alfredo Donin</div>
+											<div class="user-customer__post">UI Designer</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-customer__item item-customer">
+									<div class="item-customer__icon _icon-apostrophe"></div>
+									<h3 class="item-customer__title">He keeps his client’s best interests in sharp focus</h3>
+									<p class="item-customer__text">After working with David to sell my home in 2013, I was convinced that
+										he’s the only realtor I’ll ever need. Since then, I’ve bought two properties and sold one.</p>
+									<div class="item-customer__user user-customer">
+										<div class="user-customer__img user-customer__img-ibg">
+											<picture>
+												<source srcset="img/content/customer-block/avatar3.webp" type="image/webp"><img
+													src="img/content/customer-block/avatar3.jpg" alt="avatar">
+											</picture>
+										</div>
+										<div class="user-customer__block">
+											<div class="user-customer__name">Makenna Korsgaard</div>
+											<div class="user-customer__post">UX Researcher</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body body-footer">
+						<div class="body-footer__main">
+							<a href="#" class="body-footer__logo">
+								<img src="img/icons/main-logo.svg" alt="logo">
+								<span class="visually-hidden">На главную</span>
+							</a>
+							<p class="body-footer__text">We have built our reputation as true local area experts.</p>
+							<form action="#" class="body-footer__form form-footer">
+								<h4 class="form-footer__title">Newsletter</h4>
+								<div class="form-footer__body">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Input your email"
+										class="form-footer__input">
+									<button type="submit" class="form-footer__btn btn">Send</button>
+								</div>
+							</form>
+						</div>
+						<nav class="body-footer__menu menu-footer">
+							<div class="menu-footer__colomn">
+								<div class="menu-footer__title">Service</div>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a href="#" class="menu-footer__link">About us</a></li>
+									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Careers</a></li>
+									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Terms & Conditions</a></li>
+									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Privacy & Policy</a></li>
+								</ul>
+							</div>
+							<div class="menu-footer__colomn">
+								<div class="menu-footer__title">Community</div>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Find agents</a></li>
+									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Lifestyle</a></li>
+									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Legal notic</a></li>
+								</ul>
+							</div>
+						</nav>
+						<div class="body-footer__social social-footer">
+							<div class="social-footer__title">Follow us on</div>
+							<ul class="social-footer__list">
+								<li><a href="#" class="social-footer__link _icon-inst"><span
+											class="visually-hidden">Instagram</span></a></li>
+								<li><a href="#" class="social-footer__link _icon-yout"><span class="visually-hidden">Youtube</span></a>
+								</li>
+								<li><a href="#" class="social-footer__link _icon-faceb"><span
+											class="visually-hidden">Facebook</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script src="js/app.min.js"></script>
 </body>
+
 </html>
